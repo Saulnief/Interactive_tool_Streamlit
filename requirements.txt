@@ -1,7 +1,6 @@
 numpy
 networkx
 pandas
-pickle
 plotly
 re
 streamlit
