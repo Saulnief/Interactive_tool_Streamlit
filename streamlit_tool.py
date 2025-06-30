@@ -507,9 +507,6 @@ if not final_models.empty:
 else:
     all_feats, participation, m = [], [], []
 
-# Flatten all feature lists and count occurrences
-feature_counts = Counter([f for feats in df['features'] for f in feats])
-
 # UI: Checkboxes for features with dynamic counts
 st.sidebar.title("Select Features")
 selected_features = []
