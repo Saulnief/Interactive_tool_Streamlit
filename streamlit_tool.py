@@ -96,7 +96,7 @@ def plot_3d_graph(m, names, participation):
     return fig
 
 def extract_base_name(feature_name):
-    return re.split(r'\(.*?\)|[<>]=?.*$', feature_name)[0]
+    return re.split(r'\(.*?\)|[<>]=?.*$', feature_name)[0].strip()
 
 
 # Simulate some models (or load from file)
