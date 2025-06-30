@@ -6,7 +6,6 @@ Created on Wed May 14 15:10:48 2025
 """
 import streamlit as st
 import pandas as pd
-import pickle
 import plotly.graph_objs as go
 import numpy as np
 import networkx as nx
@@ -555,8 +554,3 @@ with col2:
     else:
         st.info("No models to display. Adjust filters or selected features.")
 
-# Export filtered models
-if st.button("Export Selected Models"):
-    with open("exported_models.pkl", "wb") as f:
-        pickle.dump(final_models.to_dict(orient='records'), f)
-    st.success("Exported models to 'exported_models.pkl'")
