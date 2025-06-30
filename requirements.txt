@@ -2,5 +2,4 @@ numpy
 networkx
 pandas
 plotly
-re
 streamlit
